@@ -1,6 +1,6 @@
 package main
 
-import checker "https://github.com/Sddilora/Decorator_Pattern/checker"
+import checker "github.com/Sddilora/Decorator_Pattern/checker"
 
 func main() {
 
