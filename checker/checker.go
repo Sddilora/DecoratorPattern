@@ -12,7 +12,7 @@ func NewFileChecker() FileChecker {
     return &FileChecker{}
 }
 
-func (cFileChecker) Check(path string) {
+func (c FileChecker) Check(path string) {
     if strings.Contains(path, " ") {
         fmt.Println(false)
     } else {
@@ -27,7 +27,7 @@ func NewLogChecker() LogChecker {
     return &LogChecker{}
 }
 
-func (cLogChecker) Check(log string) {
+func (c LogChecker) Check(log string) {
     if strings.Contains(log, "MESSAGE") {
         fmt.Println(true)
     } else {
